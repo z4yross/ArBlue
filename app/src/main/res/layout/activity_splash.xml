@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.clarss.arblue.SplashActivity">
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/switch_adelante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:ss_animationDuration="600"
+        app:ss_iconPadding="5dp"
+        app:ss_iconSize="50dp"
+        app:ss_leftIcon="@mipmap/off"
+        app:ss_rightIcon="@mipmap/on"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+        app:ss_switchColor="@color/colorSwitchColor"
+        app:ss_textColor="@color/colorTextColor"
+        app:ss_textSize="12sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgSplash" />
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icono" />
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/switch_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:ss_animationDuration="600"
+        app:ss_iconPadding="5dp"
+        app:ss_iconSize="50dp"
+        app:ss_leftIcon="@mipmap/off"
+        app:ss_rightIcon="@mipmap/on"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+        app:ss_switchColor="@color/colorSwitchColor"
+        app:ss_textColor="@color/colorTextColor"
+        app:ss_textSize="12sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash" />
+
+</android.support.constraint.ConstraintLayout>
